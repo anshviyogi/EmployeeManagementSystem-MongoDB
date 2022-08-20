@@ -1,0 +1,29 @@
+<form action="/employee/finalUpdate" method="post">
+
+<h1 style="text-align: center; font-weight:bold">Update Data</h1>
+<input type="hidden" name="id" value="{{record._id}}"/>
+ <div class="form-group">
+      <label class="form-label mt-4">Name</label>
+      <input type="text" class="form-control" placeholder="Enter Name" name="name" value="{{record.name}}">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label mt-4">Email</label>
+      <input type="email" class="form-control" placeholder="Enter Email" name="email" value="{{record.email}}">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label mt-4">Phone</label>
+      <input type="text" class="form-control" placeholder="Enter Phone Number" name="phone" value="{{record.phone}}">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label mt-4">City</label>
+      <input type="text" class="form-control" placeholder="Enter City" name="city" value="{{record.city}}">
+    </div>
+<br>
+    <div class="d-grid gap-2">
+  <button class="btn btn-md btn-outline-primary" type="submit">Update</button>
+</div>
+
+</form>

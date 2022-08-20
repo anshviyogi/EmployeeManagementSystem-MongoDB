@@ -1,0 +1,23 @@
+<h1 style="text-align: center;">Delete Employee's</h1>
+<br>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each rows}}
+    <tr class="table-active">
+      <th scope="row">{{this.name}}</th>
+      <td>{{this.email}}</td>
+      <td>{{this.phone}}</td>
+      <td>{{this.city}}</td>
+      <td><a href="/employee/finalDelete/{{this._id}}" class="btn btn-outline-danger btn-sm">Delete</a></td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
